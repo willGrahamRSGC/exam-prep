@@ -15,6 +15,71 @@ var angle3 = 0
 var itterate : Bool = true
 
 while (itterate == true){
-    print("Angle 1?")
+    
+    print("Angle 1? ", terminator:"")
+    
+    if let angle = readLine(stripNewline:true){
+        
+        // checks if int
+        if let angleInt = Int(angle){
+            if angleInt > 0 && angleInt < 180 {
+        angle1 = angleInt
+            
+        itterate = false
+            }
+        }}}
+itterate = true
+while (itterate == true){
+    
+    print("Angle 2? ", terminator:"")
+    
+    if let angle = readLine(stripNewline:true){
+        
+        // checks if int
+        if let angleInt = Int(angle){
+            if angleInt > 0 && angleInt < 180 {
+            angle2 = angleInt
+            
+            itterate = false
+            }
+        }}}
+itterate = true
+while (itterate == true){
+    
+print("Angle 3? ", terminator:"")
+    
+    if let angle = readLine(stripNewline:true){
+        
+        // checks if int
+        if let angleInt = Int(angle){
+            if angleInt > 0 && angleInt < 180 {
+            angle3 = angleInt
+            
+            itterate = false
+            }
+        }}}
+
+
+if angle1 + angle2 + angle3 != 180 {
+    
+    print("Error")
+    
+} else {
+    
+    if angle1 == angle2 && angle2 == angle3 {
+        
+        print("Equilateral")
+        
+    } else if angle1 == angle2 || angle1 == angle3 || angle2 == angle3 {
+        
+        print("Isosceles")
+        
+    } else {
+        
+        print("Scalene")
+        
+    }
     
 }
+
+
